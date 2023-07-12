@@ -1,0 +1,34 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        techascent/tech.ml.dataset {:mvn/version "6.086"
+                                    :exclusions [org.slf4j/slf4j-api]}
+        clj-python/libpython-clj {:mvn/version "2.024"}
+        
+        ;scicloj/tablecloth {:mvn/version "4.04"}
+        ;;scicloj/tablecloth {:mvn/version "6.076"} ;; for when we update to tech.ml.dataset 6.x
+        ;uncomplicate/neanderthal {:mvn/version "0.36.0"}
+        ;uncomplicate/neanderthal-native {:mvn/version "0.33.0"}
+        ;org.bytedeco/mkl-platform-redist {:mvn/version "2020.1-1.5.3"}
+        ;generateme/fastmath {:mvn/version "2.0.3"}
+
+        ;semantic-csv/semantic-csv {:mvn/version "0.2.1-alpha1"}
+        ;net.mikera/core.matrix {:mvn/version "0.62.0"}
+        ;org.clojure/tools.deps.alpha {:mvn/version "0.6.496"
+                                      ;:exclusions [org.slf4j/slf4j-nop]}
+        ;metasoarous/oz {:mvn/version "2.0.0-alpha5"}
+        clojupyter/clojupyter {:mvn/version "0.3.6"}}
+        ;babashka/process {:mvn/version "0.0.1"}
+        ;dk.ative/docjure {:mvn/version "1.14.0"}
+        ;google-translate/google-translate {:mvn/version "0.1.2"}
+        ;babashka/babashka.pods {:mvn/version "0.1.0"}
+        ;com.github.seancorfield/honeysql {:mvn/version "2.0.783"}}
+        
+        
+ :aliases
+ {:cider-nrepl {:extra-deps {cider/cider-nrepl {:mvn/version "0.28.5"}
+                             nrepl/nrepl {:mvn/version "1.0.0"}}
+                :main-opts ["-m" "nrepl.cmdline"
+                            "-b" "0.0.0.0"
+                            "-p" "3851"
+                            "--middleware" "[cider.nrepl/cider-middleware]"]}}}
+

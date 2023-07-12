@@ -1,0 +1,10 @@
+version: "3"
+services:
+  libpython-clj-test:
+    container_name: libpython-clj-test-container
+    build:
+      context: .
+    environment:
+      NREPL_PORT: 3851
+    ports:
+      - 3851:3851
